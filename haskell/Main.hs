@@ -1,8 +1,8 @@
 module Main where
 
-fib 0 = 0
-fib 1 = 1
-fib n = fib (n - 1) + fib (n - 2)
+fib x y n
+  | n == 1 = y
+  | otherwise = fib y (x+y) (n-1)
 
 main = do
   print ("Fibonacci " ++ show (fib 10))
