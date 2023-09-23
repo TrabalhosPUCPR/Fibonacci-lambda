@@ -5,4 +5,4 @@ fib x y n
   | otherwise = fib y (x+y) (n-1)
 
 main = do
-  print ("Fibonacci " ++ show (fib 10))
+  print ("Fibonacci " ++ show (fib 0 1 50))
